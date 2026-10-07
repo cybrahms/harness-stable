@@ -1,0 +1,18 @@
+[package]
+name        = "listening-sweep"
+version     = "0.1.0"
+description = "Read-only sweep that finds persistent agents that are running but no longer listening to their queue"
+author      = "cybrahms"
+homepage    = "https://medlab.sublayer.space/c/running-worker-assumed-listening/"
+
+[harness]
+harness     = "claude-code"
+auto_accept = true
+max_turns   = 40
+quiet       = true
+prompt_file = "prompt.md"
+skill_paths = ["skills"]
+
+[requests]
+skill_paths = true
+network     = false
